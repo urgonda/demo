@@ -18,10 +18,10 @@ class Crud_model extends CI_Model{
 	public function delete_failed(){
 		echo "Delete operation failed";
 	}	
-	public function read(){
-		$query = $this->db->query("select * from crud");
-		return $query;
-	}
+	// public function read(){
+	// 	$query = $this->db->query("select * from crud");
+	// 	return $query;
+	// }
 	public function get_record_byID($id){
 		$query = $this->db->query("select * from crud where id='$id'");
 		return $query->row();
